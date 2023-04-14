@@ -1,0 +1,13 @@
+{
+  "name": "John Smith",
+  "age": 35,
+  "gender": "male",
+  "city": "New York",
+  "country": "United States",
+  "contact": {
+    "email": "johnsmith@example.com",
+    "phone": "+1 555-123-4567"
+  },
+  "hobbies": ["reading", "traveling", "photography"],
+  "is_student": false
+}
