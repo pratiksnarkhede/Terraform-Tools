@@ -1,0 +1,23 @@
+{
+  "Version": "2012-10-17",
+  "Id": "demo_queue",
+  "Statement": [
+      {
+          "Sid": "",
+          "Effect": "Allow",
+          "Principal": {
+              "Service": "s3.amazonaws.com"
+          },
+          "Action": [
+              "SQS:SendMessage"
+          ],
+          "Resource": "arn:aws:sqs:us-east-1:899048518063:demo_queue",
+          "Condition": {
+              "ArnLike": {
+                  "aws:SourceArn": "arn:aws:s3:*:*:pratikbucket777"
+              }
+              
+          }
+      }
+  ]
+}
