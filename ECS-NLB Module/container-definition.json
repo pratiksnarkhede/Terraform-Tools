@@ -1,0 +1,17 @@
+[
+    {
+      "name": "my-container",
+      "image": "nginx:latest",
+      "portMappings": [
+        {
+          "containerPort": 80,
+          "protocol": "tcp",
+          "hostPort": 80
+        }
+      ],
+      "cpu": 256,
+      "memory": 512,
+      "essential": true
+    }
+  ]
+  

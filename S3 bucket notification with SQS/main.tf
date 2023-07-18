@@ -1,5 +1,4 @@
 
-
 resource "aws_sqs_queue" "demo_queue" {
   name   = "demo_queue"
   policy =  file("${path.module}/s3_notification_policy.json") 
